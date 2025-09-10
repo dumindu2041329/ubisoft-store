@@ -1,0 +1,507 @@
+/* -----Common Styles----- */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* -----Main Background----- */
+.main-background{
+    position: relative;
+    width: 100%;
+    height: 435px;
+}
+
+.main-background .bg-image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left Section */
+.main-background .left-section{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.main-background .left-section .game-page-logo{
+    width: 150px;
+    height: 100px;
+    background-size: cover;
+}
+
+.main-background .left-section .title{
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-background .left-section .btn{
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px #fff solid;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+/* Right Section */
+.main-background .right-section{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 350px;
+}
+
+.main-background .right-section .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(36,36,36,.8);
+    border-radius: 10px;
+}
+
+.main-background .right-section .top img{
+    width: 50px;
+    height: 60px;
+}
+
+.main-background .right-section .top p{
+    color: #fff;
+}
+
+.main-background .right-section .bottom{
+    position: relative;
+    margin-top: 100px;
+    padding: 10px;
+    background-color: #151820;
+    bottom: -24px;
+}
+
+.main-background .right-section .bottom .part{
+    display: flex;
+    align-items: center;
+}
+
+.main-background .right-section .bottom .price-section{
+    display: flex;
+    color: #fff;
+    padding: 20px 10px;
+}
+
+.main-background .right-section .bottom .price-section *{
+    margin-left: 10px;
+}
+
+.main-background .right-section .bottom .price-section > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-background .right-section .bottom .price-section > div label{
+    width: 100%;
+}
+
+.main-background .right-section .bottom .part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-background .right-section .bottom .part a{
+    text-decoration: none;
+    background-color: #006ef5;
+    width: 80%;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.main-background .right-section .bottom .part i{
+    width: 15%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Gameplay Trailers */
+.trailers{
+    padding: 30px 0;
+    background-color: #151820;
+    color: #fff;
+    position: relative;
+}
+
+.trailers .container .arrow{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.trailers .container .left{
+    left: 100px;
+}
+
+.trailers .container .right{
+    right: 100px;
+}
+
+.trailers .container .slider{
+    display: flex;
+}
+
+.trailers .container .slider a{
+    width: 25%;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.trailers .container .slider a i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trailers .container .slider a img{
+    width: 98%;
+    object-fit: cover;
+}
+
+.trailers .container .slider .not-active{
+    display: none;
+}
+
+/* About This Game */
+.about-game{
+    background-color: #000;
+    padding: 50px;
+    color: #fff;
+}
+
+.about-game .title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.about-game .about-desc{
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-size: 0.9rem;
+}
+
+.about-game .about-desc .left{
+    width: 70%;
+    font-size: 1rem;
+}
+
+.about-game .about-desc .left .desc{
+    margin-bottom: 20px;
+}
+
+.about-game .about-desc .left .date span{
+    font-weight: bold;
+}
+
+.about-game .about-desc .right{
+    width: 25%;
+}
+
+.about-game .about-desc .right .part{
+    margin-bottom: 15px;
+}
+
+.about-game .about-desc .right .part > p{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.about-game .about-desc .right .links{
+    display: flex;
+    width: 330px;
+    justify-content: space-between;
+}
+
+.about-game .about-desc .right .links a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border: 1px #fff solid;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* Discount Section */
+.discount-20-percent{
+    background-image: url(../images/Games/Star\ Wars\ Outlaws/discount.jpg);
+    height: 450px;
+    position: relative;
+}
+
+.discount-20-percent .text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 150px;
+    color: #fff;
+}
+
+.discount-20-percent .text .title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.discount-20-percent .text .sub-title{
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.discount-20-percent .text .learn-more{
+    margin-bottom: 50px;
+}
+
+.discount-20-percent .text .btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Second Sub Header */
+.second-sub-header{
+    height: 50px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-sub-header .menu-items{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-sub-header .menu-items a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.second-sub-header .menu-items a::after{
+    position: absolute;
+    content: '';
+    bottom: -14px;
+    background-color: #fff;
+    width: 100%;
+    height: 3px;
+    display: none;
+}
+
+.second-sub-header .menu-items a:hover::after{
+    display: block;
+}
+
+/* Kotaku */
+.kotaku{
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.kotaku .bg-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kotaku .top-image{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 150px;
+}
+
+/* Editions */
+.editions-section{
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+}
+
+.editions-section .title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.editions-section .editions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 950px;
+    margin: 0 auto;
+}
+
+.editions-section .editions .edition{
+    width: 30%;
+    height: 800px;
+    border-radius: 10px;
+}
+
+.editions-section .editions .edition .edition-image{
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.editions-section .editions .edition .edition-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.editions-section .editions .edition .edition-desc{
+    background-color: #1b1b1b;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    height: 650px;
+    position: relative;
+}
+
+.editions-section .editions .edition .edition-desc .edition-name{
+    margin: 30px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.editions-section .editions .edition .edition-desc .edition-category{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.editions-section .editions .edition .edition-desc .edition-category img{
+    width: 20%;
+}
+
+.editions-section .editions .edition .edition-desc .edition-category p{
+    width: 40%;
+    margin-left: -40px;
+}
+
+.editions-section .editions .edition .edition-desc .edition-category i{
+    width: 10%;
+}
+
+.editions-section .editions .edition .edition-desc .price{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.editions-section .editions .edition .edition-desc .price .present-price{
+    text-decoration: line-through;
+    margin-bottom: 10px;
+}
+
+.editions-section .editions .edition .edition-desc .price .new-price{
+    font-size: 1.5rem;
+    color: rgb(255, 131, 0);
+    margin-bottom: 10px;
+}
+
+.editions-section .editions .edition .price .btn{
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(0, 194, 72);
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Additional content */
+.additional-content{
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+}
+
+.additional-content .title{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.additional-content .contents .content{
+    display: flex;
+    align-items: start;
+}
+
+.additional-content .contents .content .slider{
+    width: 30%;
+    height: 210px;
+    overflow: hidden;
+}
+
+.additional-content .contents .content .slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.additional-content .contents .content .slider .curr{
+    display: block;
+}
+
+.additional-content .contents .content .description{
+    width: 70%;
+}

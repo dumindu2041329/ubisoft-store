@@ -1,0 +1,785 @@
+/* -------Common Styles------- */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 1.3rem;
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.title::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 40px;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+}
+
+.games {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: 19.5%;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    display: block;
+}
+
+.card:hover {
+    animation: card 0.3s forwards ease-in;
+}
+
+@keyframes card {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -5px;
+    }
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 364px;
+    display: block;
+}
+
+.black-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    height: 364px;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.card:hover .black-hover {
+    opacity: 0.8;
+}
+
+.card:hover .black-hover .heart {
+    opacity: 1;
+}
+
+.card .black-hover .heart {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+}
+
+.card .black-hover .heart .fa-regular {
+    border-radius: 50%;
+    border: 1px #fff solid;
+    color: #fff;
+    padding: 10px;
+}
+
+.card .black-hover .heart .fa-solid {
+    border-radius: 50%;
+    color: #006EF5;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+}
+
+.card .black-hover .heart:hover .fa-regular {
+    opacity: 0;
+}
+
+.card .black-hover .heart:hover .fa-solid {
+    opacity: 1;
+}
+
+.card .black-hover .add-to-wishlist {
+    position: absolute;
+    right: 18px;
+    top: 90px;
+    background-color: #fff;
+    padding: 8px 15px;
+    color: gray;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.card .black-hover .add-to-wishlist::after {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    top: -8px;
+    right: 15px;
+}
+
+.card .black-hover .heart:hover~.add-to-wishlist {
+    top: 80px;
+    opacity: 1;
+}
+
+.card .black-hover .windows-icon {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+
+.card .desc {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.card .desc .name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card .desc .name span {
+    font-size: 0.5rem;
+    position: relative;
+    top: -4px;
+    font-weight: bold;
+}
+
+.card .desc .edition {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.card .desc .price {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: end;
+}
+
+.card .desc .price .present-price {
+    font-size: 1.2rem;
+    color: gray;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+.card .desc .price .new-price {
+    color: #ff8300;
+}
+
+.card .rounded-rectangle {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background-color: #edb800;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card .rounded-rectangle-gold {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background-color: #ff8300;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.dlc-section {
+    display: flex;
+    align-items: center;
+}
+
+.dlc-section .dlc {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 8px;
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+
+.dlc-section .name {
+    margin-top: 10px;
+}
+
+/* Autumn 24 */
+.autumn-24 {
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.autumn-24 .image {
+    width: 100%;
+}
+
+.autumn-24 .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autumn-24 .sidebar {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    width: 350px;
+}
+
+.autumn-24 .sidebar .topic {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.autumn-24 .sidebar .description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.autumn-24 .sidebar .btn {
+    background-color: #006EF5;
+    text-decoration: none;
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.autumn-24 .sidebar .valid {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* $15 USD off your cart when you spend $29.99 USD or more */
+.offer-section {
+    padding: 50px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.offer-section .card:nth-child(1) .desc .price p {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Amazing Deals */
+.amazing-deals {
+    padding: 30px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.amazing-deals .container .games .card {
+    flex-basis: 30%;
+    height: 300px;
+}
+
+.amazing-deals .container .games .card>img {
+    height: 200px;
+}
+
+.amazing-deals .container .games .card .black-hover {
+    height: 200px;
+}
+
+.amazing-deals .container .games .card .desc {
+    padding: 30px;
+    line-height: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Visit Ubisoft Universes */
+.visit-ubisoft-universes {
+    padding: 30px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.visit-ubisoft-universes .slider {
+    display: flex;
+}
+
+.visit-ubisoft-universes .slider a {
+    width: 25%;
+    transition: all 0.3s ease-in;
+}
+
+.visit-ubisoft-universes .slider a:hover{
+    transform: translateY(-5px);
+}
+
+.visit-ubisoft-universes .slider a img {
+    object-fit: cover;
+    width: 98%;
+}
+
+.visit-ubisoft-universes .slider .not-active {
+    display: none;
+}
+
+/* Gear up for Season 2 */
+.gear-up {
+    padding: 30px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.gear-up .games {
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    margin-top: -20px;
+}
+
+.gear-up .games .slider {
+    display: flex;
+    overflow-x: hidden;
+    height: 560px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.gear-up .games .slider .card {
+    width: 18%;
+}
+
+.gear-up .games .slider .not-active {
+    display: none;
+}
+
+.gear-up .games .slider .card .desc {
+    height: 130px;
+}
+
+.gear-up .games .slider .card .desc .present-price {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Browse */
+.browse {
+    padding: 30px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.browse .browse-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.browse .browse-items .item {
+    width: 24%;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+
+.browse .browse-items .item:hover {
+    transform: translateY(-5px);
+}
+
+.browse .browse-items .item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.browse .browse-items .item .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Unimited access to the best of ubisoft */
+.unlimited-access {
+    padding: 30px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.unlimited-access .unlimited-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.unlimited-access .unlimited-items .item {
+    width: 49%;
+    background-color: #fff;
+    height: 400px;
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+
+.unlimited-access .unlimited-items .item:hover{
+    transform: translateY(-5px);
+}
+
+.unlimited-access .unlimited-items .item img {
+    width: 100%;
+    height: 100%;
+}
+
+.unlimited-access .unlimited-items .item .text {
+    position: absolute;
+    width: 50%;
+    height: 400px;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.unlimited-access .unlimited-items .item .text .main-text {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.unlimited-access .unlimited-items .item .text .sub-text {
+    margin-bottom: 30px;
+}
+
+.unlimited-access .unlimited-items .item .text a {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #006EF5;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* New releases coming soon */
+.new-releases {
+    padding: 30px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.new-releases .container .games .card {
+    flex-basis: 30%;
+    height: 320px;
+}
+
+.new-releases .container .games .card>img {
+    height: 200px;
+}
+
+.new-releases .container .games .card .black-hover {
+    height: 200px;
+}
+
+.new-releases .container .games .card .desc {
+    padding: 30px;
+    line-height: 10px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.new-releases .container .games .card .rounded-rectangle {
+    background-color: #7469ff;
+}
+
+.new-releases .container .games .card .desc .name {
+    font-weight: normal;
+}
+
+.new-releases .container .games .card .desc .present-price {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.new-releases .container .games .card .desc .dlc-section {
+    margin-bottom: 10px;
+}
+
+/* Something for everyone */
+.something-for-everyone {
+    padding: 30px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.something-for-everyone .games {
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    margin-top: -20px;
+}
+
+.something-for-everyone .games .slider {
+    display: flex;
+    overflow-x: hidden;
+    height: 560px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.something-for-everyone .games .slider .card {
+    width: 18%;
+}
+
+.something-for-everyone .games .slider .not-active {
+    display: none;
+}
+
+.something-for-everyone .games .slider .card .desc {
+    height: 130px;
+}
+
+.something-for-everyone .games .slider .card .desc .present-price {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Week's Best Sellers */
+.weeks-best-sellers {
+    padding: 30px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.weeks-best-sellers .games {
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    margin-top: -20px;
+}
+
+.weeks-best-sellers .games .slider {
+    display: flex;
+    overflow-x: hidden;
+    height: 560px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.weeks-best-sellers .games .slider .card {
+    flex-basis: 24.5%;
+}
+
+.weeks-best-sellers .games .slider .not-active {
+    display: none;
+}
+
+.weeks-best-sellers .games .slider .card .desc {
+    height: 130px;
+}
+
+.weeks-best-sellers .games .slider .card:nth-child(1) .desc .present-price,
+.weeks-best-sellers .games .slider .card:nth-child(3) .desc .present-price,
+.weeks-best-sellers .games .slider .card:nth-child(6) .desc .present-price,
+.weeks-best-sellers .games .slider .card:nth-child(8) .desc .present-price,
+.weeks-best-sellers .games .slider .card:nth-child(9) .desc .present-price,
+.weeks-best-sellers .games .slider .card:nth-child(10) .desc .present-price {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.weeks-best-sellers .games .slider .card:nth-child(3) .rounded-rectangle{
+    background-color: #7469ff;
+}
+
+/* Footer */
+footer .top{
+    padding: 30px 50px;
+    background-color: #000;
+    font-size: 0.9rem;
+}
+
+footer .top p{
+    color: #7e817c;
+}
+
+footer .top p span{
+    color: #2bc1c9;
+}
+
+footer .middle{
+    background-color: #242424;
+    padding: 50px 0;
+}
+
+footer .middle .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .middle .container .part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33.33%;
+    color: #fff;
+    position: relative;
+}
+
+footer .middle .container .part i{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+footer .middle .container .part:nth-child(1)::after,
+footer .middle .container .part:nth-child(2)::after{
+    position: absolute;
+    content: '';
+    background-color: #7e817c;
+    width: 0.5px;
+    height: 40px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer .bottom{
+    background-color: #1b1b1b;
+    padding: 20px 0;
+}
+
+footer .bottom .container .sec1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+footer .bottom .container .sec1 .part{
+    width: 15%;
+    line-height: 25px;
+}
+
+footer .bottom .container .sec1 .part .text{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+footer .bottom .container .sec1 .part .sub-text{
+    color: #7e817c;
+    font-size: 0.9rem;
+}
+
+footer .bottom .container .sec1 .menu{
+    line-height: 30px;
+    font-size: 0.9rem;
+}
+
+footer .bottom .container .sec1 .menu p{
+    font-weight: bold;
+    color: #fff;
+}
+
+footer .bottom .container .sec1 .menu a{
+    text-decoration: none;
+    color: #7e817c;
+    display: block;
+}
+
+footer .bottom .container .sec1 .menu a:hover{
+    text-decoration: underline;
+}
+
+footer .bottom .container .sec1 .final-part{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 30px;
+}
+
+footer .bottom .container .sec1 .final-part p i{
+    margin-right: 20px;
+}
+
+footer .bottom .container .sec2 .part{
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    color: #7e817c;
+    display: flex;
+    align-items: center;
+}
+
+footer .bottom .container .sec2 .part a{
+    text-decoration: none;
+    color: #7e817c;
+}
+
+footer .bottom .container .sec2 .part a:hover{
+    text-decoration: underline;
+}
+
+footer .bottom .container .sec2 .part i{
+    font-size: 0.3rem;
+    margin: 0 10px;
+}
